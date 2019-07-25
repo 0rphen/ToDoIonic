@@ -1,0 +1,22 @@
+<ion-header no-border>
+    <ion-toolbar color="primary">
+	<ion-buttons slot="start">
+	    <ion-back-button defaultHref="/"></ion-back-button>
+	</ion-buttons>
+	<ion-title>Agregar ToDo</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+	<ion-label position="floating">Nombre</ion-label>
+	<ion-input type="text" [(ngModel)]="nombreItem"></ion-input>
+	<ion-label position="floating">Correo</ion-label>
+	<ion-input type="text" [(ngModel)]="correoItem"></ion-input>
+	<ion-label position="floating">Cedula</ion-label>
+	<ion-input type="text" [(ngModel)]="cedulaItem"></ion-input>
+    </ion-item>
+    <div class="ion-padding">
+        <ion-button expand="block" type="submit" class="ion-no-margin" (click)="agregarItem()">Guardar</ion-button>
+    </div>
+</ion-content>
