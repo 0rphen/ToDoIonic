@@ -35,7 +35,7 @@ export class AddPage implements OnInit {
             this.todoList.crearItem(nuevoItem);
         else
             this.todoList.editarItem(nuevoItem, this.id);
-        this.todoList.guardar(this.id);
+        this.todoList.guardar(this.id, nuevoItem);
         this.router.navigateByUrl('/tabs/tab1');
     }
 

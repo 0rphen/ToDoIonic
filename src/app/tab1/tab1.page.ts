@@ -18,7 +18,6 @@ export class Tab1Page {
 
     deleteItem(index: number) {
         this.todoList.items.splice(index, 1);
-        this.todoList.guardar();
     }
 
     updateItem(id: number) {
